@@ -1,0 +1,11 @@
+{
+  "template": ["Homework", "MLA", "Simple Essay"],
+  "directory_name": "project-dir",
+  "first_name": "Bryon",
+  "last_name": "Tjanaka",
+  "instructor": "Professor X",
+  "title": "My Project",
+  "project_name": "my-project",
+  "class": "Class 101",
+  "date": "1 January 1970"
+}
