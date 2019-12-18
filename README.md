@@ -3,7 +3,16 @@
 A [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template for
 various (simple) school-related Latex projects.
 
+## Dependencies
+
+- latexmk
+- pdflatex
+- xelatex
+
 ## Templates
+
+All templates are equipped with a Makefile that uses `latexmk` to continuously
+build the document and `evince` to display it.
 
 - `Homework`: Usually for math or theory classes
   ![Homework sample](docs/samples/homework.png)
