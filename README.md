@@ -9,6 +9,14 @@ various (simple) school-related Latex projects.
 - pdflatex
 - xelatex
 
+## Usage
+
+Once you have Cookiecutter installed, simply run:
+
+```
+cookiecutter https://github.com/btjanaka/latex-cookiecutter
+```
+
 ## Templates
 
 All templates are equipped with a Makefile that uses `latexmk` to continuously
