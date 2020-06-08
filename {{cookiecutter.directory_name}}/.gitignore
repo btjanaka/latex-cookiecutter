@@ -1,0 +1,11 @@
+# tex output
+*.aux
+*.out
+*.log
+*.fls
+*.fdb_latexmk
+*.dvi
+*.toc
+
+# editor files
+*.swp
