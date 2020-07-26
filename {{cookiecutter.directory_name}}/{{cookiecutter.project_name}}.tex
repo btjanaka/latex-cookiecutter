@@ -4,55 +4,88 @@
 
 \documentclass[11pt]{article}
 
+%
+% Packages
+%
+
+% Page setup
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
-\usepackage{caption}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage[shortlabels]{enumitem}
-\usepackage{enumitem}
 \usepackage{fancyhdr}
-\usepackage{float}
-\usepackage{graphicx}
-\usepackage[export]{adjustbox}
-\usepackage{algorithm}
-\usepackage[noend]{algpseudocode}
-\usepackage{courier}
+
+% Characters
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{setspace}
-\usepackage{textcomp}
-\usepackage{hyperref}
 
+% Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Algorithm pseudocode
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+% Images and captions
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+
+% Lists
+\usepackage[shortlabels]{enumitem}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup {
+  % colorlinks=true,
+  % urlcolor=blue,
+}
+
+% Code font
+\usepackage{courier}
+
+% Text
+\usepackage{setspace}
+\usepackage[export]{adjustbox}
+\usepackage{textcomp}
+
+%
 % Math commands
+%
+
 \DeclareMathOperator{\E}{\mathbb{E}}
 \DeclareMathOperator{\R}{\mathbb{R}}
 
-% Code style
+%
+% Code listing
+%
+
 \usepackage{listings}
-\usepackage{color}
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-\lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\footnotesize,
-    breakatwhitespace=false,
-    breaklines=true,
-    captionpos=b,
-    keepspaces=true,
+\usepackage{xcolor}
+\definecolor{code-green}{rgb}{0,0.6,0}
+\definecolor{code-purple}{HTML}{8959a8}
+\definecolor{code-light-grey}{HTML}{f2f2f2}
+\definecolor{code-dark-grey}{HTML}{606060}
+\lstset{
+    backgroundcolor=\color{code-light-grey},
+    basicstyle=\footnotesize\ttfamily,
+    commentstyle=\color{code-dark-grey}\ttfamily\it,
+    keywordstyle=\color{code-purple}\ttfamily\bf,
+    stringstyle=\color{code-green},
+    numberstyle=\tiny\color{code-dark-grey},
+    numbersep=6pt,
     numbers=left,
-    numbersep=5pt,
+    keepspaces=true,
     showspaces=false,
     showstringspaces=false,
     showtabs=false,
-    tabsize=2
+    tabsize=2,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    rulecolor=\color{code-light-grey},
+    linewidth=1.0\textwidth
 }
-\lstset{style=mystyle}
+
+% ------------------------------------------------------------------------------
 
 \setlength\parindent{0pt}
 \pagestyle{fancy}
@@ -73,9 +106,7 @@
 
 \section{Code}
 
-% {\fontfamily{cmss}\selectfont
 % \lstinputlisting[language=Python, firstline=1, lastline=6]{foo.py}
-% }
 
 \newpage
 
